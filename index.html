@@ -7,16 +7,88 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-
+<link rel="stylesheet" href="./style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  Bill
+
+  <div class="wrapper">
+    <section class="calc-section">
+      <div class="bill">
+        <label for="">Bill</label>
+        <div class="text-area">
+          <img src="./images/icon-dollar.svg" alt="Images dollar">
+          <input type="number" class="input-bill">
+        </div>
+      </div>
+  
+      <div class="select-tip">
+        <label for="">Select Tip %</label>
+        <div class="btn-area">
+         <button class="btn btn-tip">5%</button>
+         <button class="btn btn-tip">10%</button>
+         <button class="btn btn-tip">15%</button>
+         <button class="btn btn-tip">25%</button>
+         <button class="btn btn-tip">50%</button>
+         <input type="number" class="input custom-tip" placeholder="Custom">
+      </div>
+        
+  
+  
+        </div>
+  
+  
+        <div class="bill">
+          <label for="">Number of People</label>
+          <p>Can`t be zero</p>
+  
+          <div class="text-area">
+            <img src="./images/icon-person.svg" alt="Images person" width="12" height="15">
+            <input type="number" class="input-bill">
+          </div>
+        </div>
+    </section>
+
+    <section class="result">
+      <div class="amount">
+        <div class="text">
+          <p class="text-result-1">Tip Amount</p>
+        <span class="text-result-2">/ person</span>
+        </div>
+        <h1 class="result-amount">
+          0.00
+        </h1>
+
+      </div>
+
+      <div class="total">
+        <div class="text">
+          <p class="text-result-1">Total</p>
+        <span class="text-result-2">/ person</span>
+        </div>
+        <h1 class="result-amount">
+          0.00
+        </h1>
+      </div>
+        
+
+        
+        <button class="btn btn-reset">RESET</button>
+    
+
+      
+    </section>
+    
+
+
+
+    </div>
+  <!-- Bill
 
   Select Tip %
   5%
@@ -34,11 +106,14 @@
   Total
   / person
 
-  Reset
+  Reset -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+<script src="./main.js"></script>
+
 </body>
 </html>
