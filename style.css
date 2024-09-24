@@ -16,6 +16,15 @@
 
 
 
+/* Reusable */
+.btn-area .active{
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+/* Reusable End */
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +40,9 @@ body{
     place-content: center;
 }
 
-
+.warn-people{
+    display: none;
+}
 .wrapper{
 display: flex;
 gap: 50px;
@@ -48,6 +59,9 @@ border-radius: 15px;
     gap: 45px;
 }
 
+.empty{
+    display: block;
+}
 
 .text-area{
     background-color: var(--Light-grayish-cyan);
@@ -71,6 +85,11 @@ input{
 }
 
 .input-bill{
+    background-color: transparent;
+
+}
+
+.input-people{
     background-color: transparent;
 
 }
@@ -104,6 +123,8 @@ input{
     background-color: var(--Strong-cyan);
     color: var(--Very-dark-cyan);
 }
+
+
 
 .btn-tip{
     height: 50px;
@@ -160,7 +181,20 @@ border-radius: 15px;
 }
 
 
+.btn-reset{
+    margin-top: 105px;
+    padding: 15px;
+    width: 100%;
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
 
+
+
+}
+
+.btn-reset:hover{
+    background-color: var(--Light-grayish-cyan);
+}
 
 
 
@@ -172,21 +206,26 @@ border-radius: 15px;
 
 
 @media screen and (max-width:768px){
+    html,
+    body{
+        display: block;
+    }
     .wrapper{
         display: flex;
         flex-direction: column;
-        gap: 50px;
         padding: 30px;
         background-color: var(--White);
-        border-radius: 15px;
+        border-radius: 0px;
         align-items: center;
+        justify-content: center;
         width: 100%;
         height: 100%;
         }
         .calc-section{
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 5px;
+            width: 90%;
         }
 
         .btn-area{
@@ -220,4 +259,70 @@ border-radius: 15px;
         }
 
 
+
+        input{
+            width: 90%;
+        }
+
+
     }
+
+@media screen and (max-width:376px){
+    html,
+    body{
+        display: block;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background-color: var(--White);
+        border-radius: 0px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        }
+        .calc-section{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 90%;
+        }
+
+        .btn-area{
+            margin-top: 15px;
+            display: grid;
+            place-content: center;
+            gap: 15px;
+            grid-template-columns: repeat(2,150px);
+        }
+
+
+        .result{
+            width: 90%;
+            height: 40%;
+            background-color: var(--Very-dark-cyan);
+            padding: 50px;
+            border-radius: 15px;
+        }
+        .total{
+            display: flex;
+            justify-content: space-between;
+            margin-top:15% ;
+        
+        }
+
+
+        .result button{
+            margin-top:15% ;
+            width: 100%;
+            padding:  15px ;
+        }
+
+
+
+        input{
+            width: 90%;
+        }
+}

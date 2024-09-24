@@ -30,12 +30,12 @@
       <div class="select-tip">
         <label for="">Select Tip %</label>
         <div class="btn-area">
-         <button class="btn btn-tip">5%</button>
-         <button class="btn btn-tip">10%</button>
-         <button class="btn btn-tip">15%</button>
-         <button class="btn btn-tip">25%</button>
-         <button class="btn btn-tip">50%</button>
-         <input type="number" class="input custom-tip" placeholder="Custom">
+         <button class="btn btn-tip btn_5">5%</button>
+         <button class="btn btn-tip btn_10">10%</button>
+         <button class="btn btn-tip btn_15">15%</button>
+         <button class="btn btn-tip btn_25">25%</button>
+         <button class="btn btn-tip btn_50">50%</button>
+         <input type="number" class="input custom-tip" placeholder="Custom" >
       </div>
         
   
@@ -45,11 +45,11 @@
   
         <div class="bill">
           <label for="">Number of People</label>
-          <p>Can`t be zero</p>
+          <p class="warn-people">Can`t be zero</p>
   
           <div class="text-area">
             <img src="./images/icon-person.svg" alt="Images person" width="12" height="15">
-            <input type="number" class="input-bill">
+            <input type="number" class="input-people" value="1">
           </div>
         </div>
     </section>
@@ -71,7 +71,7 @@
           <p class="text-result-1">Total</p>
         <span class="text-result-2">/ person</span>
         </div>
-        <h1 class="result-amount">
+        <h1 class="result-amount result-total">
           0.00
         </h1>
       </div>
